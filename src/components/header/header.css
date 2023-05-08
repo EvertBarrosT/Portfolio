@@ -37,6 +37,32 @@
     transition: .3s;
 }
 
+.nav__list-plus {
+    display: flex;
+    column-gap: 1rem;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.nav__button {
+    cursor: pointer;
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    padding: 0rem 0.30rem;
+    font-weight: var(--font-medium);
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+}
+
+.nav__button:hover {
+    background-color: var(--title-color);
+    color: var(--container-color);
+}
+
+.nav__button-darkmod {
+    font-size: 1.6rem;
+}
+
 .nav__icon,
 .nav__close,
 .nav__toggle {

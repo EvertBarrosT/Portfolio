@@ -67,6 +67,18 @@ const Header = () => {
                     <i class="uil uil-times nav__close" onClick={() => showMenu(!Toggle)}></i>
                 </div>
 
+                <div>
+                    <ul className="nav__list-plus">
+                        <li className="nav__item">
+                            <span className="nav__button nav__button-language"> Português (BR) </span>
+                        </li>
+
+                        <li className="nav__item">
+                            <i className="uil uil-moon nav__button nav__button-darkmod"></i>
+                        </li>
+                    </ul>
+                </div>
+
                 <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
                     <i class="uil uil-apps"></i>
                 </div>
