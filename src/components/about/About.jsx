@@ -3,12 +3,13 @@ import './about.css';
 import AboutImg from '../../assets/EuGrande.jpg';
 import CV from '../../assets/EvertBarros-Curriculo.pdf';
 import Info from './Info';
+import { i18n } from "../translate/i18n";
 
 const About = () => {
     return (
         <section className="about section" id="about">
-            <h2 className="section__title">About Me</h2>
-            <span className="section__subtitle">My introduction</span>
+            <h2 className="section__title">{i18n.t('About.title')}</h2>
+            <span className="section__subtitle">{i18n.t('About.subtitle')}</span>
 
             <div className="about__container container grid">
                 <img src={AboutImg} alt="" className="about__img" />
@@ -17,11 +18,11 @@ const About = () => {
                     <Info />
 
                     <p className="about__description">
-                        sdfsfsdf sdfsf sf s sd sfdsdfsf sdfsdf sdfsdf ssddf sf sdfs sdd sdf sdfsdf s fsd fs ds sd fdsdf sd sdfsdfs sdfs sd sf ssdfs ssdfsdfs dsdfs d.
+                        {i18n.t('About.description')}
                     </p>
 
                     <a download="" href={CV} className="button button--flex">
-                        Download CV
+                        {i18n.t('About.download')}
                         <svg
                             class="button__icon"
                             xmlns="http://www.w3.org/2000/svg"

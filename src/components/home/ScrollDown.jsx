@@ -1,3 +1,4 @@
+import { i18n } from "../translate/i18n";
 
 const ScrollDown = () => {
     return (
@@ -38,7 +39,7 @@ const ScrollDown = () => {
                         }}
                     ></path>
                 </svg>
-                <span className="home__scroll-name">Scroll Down</span>
+                <span className="home__scroll-name">{i18n.t('Home.scroll')}</span>
                 <i class="uil uil-arrow-down home__scroll-arrow"></i>
             </a>
         </div >

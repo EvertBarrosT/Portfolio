@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './services.css'
+import { i18n } from "../translate/i18n";
 
 const Services = () => {
     const [toggleState, setToggleState] = useState(0);
@@ -10,15 +11,15 @@ const Services = () => {
 
     return (
         <section className="services section" id="services">
-            <h2 className="section__title">Services</h2>
-            <span className="section__subtitle">What i offer</span>
+            <h2 className="section__title">{i18n.t('Services.title')}</h2>
+            <span className="section__subtitle">{i18n.t('Services.subtitle')}</span>
 
             <div className="services__container container grid">
                 <div className="services__content">
                     <div>
                         <i className="uil uil-web-grid services__icon"></i>
                         <h3 className="services__title">
-                            Product <br /> Designer
+                            {i18n.t('Services.backendDeveloper.title')}
                         </h3>
                     </div>
 

@@ -1,7 +1,21 @@
 import React, { useState } from 'react';
 import "./header.css";
+import { i18n } from "../translate/i18n";
 
 const Header = () => {
+    /*=============== Change Website Language ===============*/
+    const handleSelectChange = (languageType) => {
+        if(languageType === "Português (BR)") {
+            console.log("1")
+            setLanguage("English (US)")
+            i18n.changeLanguage("pt")
+        }else {
+            console.log("2")
+            setLanguage("Português (BR)")
+            i18n.changeLanguage("en")
+        }
+    }
+
     /*=============== Change Background Header ===============*/
     window.addEventListener("scroll", function () {
         const header = document.querySelector(".header");
@@ -13,6 +27,7 @@ const Header = () => {
     /*=============== Toggle Menu ===============*/
     const [Toggle, showMenu] = useState(false);
     const [activeNav, setActiveNav] = useState("#home");
+    const [language, setLanguage] = useState("English (US)");
 
     return (
         <header className="header">
@@ -24,42 +39,42 @@ const Header = () => {
                         <li className="nav__item">
                             <a href="#home" onClick={() => setActiveNav('#home')} className={activeNav === "#home" ? "nav__link active-link" : "nav__link"}>
                                 <i className="uil uil-estate nav__icon"></i>
-                                Home
+                                {i18n.t('Header.navHome')}
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === "#about" ? "nav__link active-link" : "nav__link"}>
                                 <i className="uil uil-user nav__icon"></i>
-                                About
+                                {i18n.t('Header.navAbout')}
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="#skills" onClick={() => setActiveNav('#skills')} className={activeNav === "#skills" ? "nav__link active-link" : "nav__link"}>
                                 <i className="uil uil-file-alt nav__icon"></i>
-                                Skills
+                                {i18n.t('Header.navSkills')}
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="#services" onClick={() => setActiveNav('#services')} className={activeNav === "#services" ? "nav__link active-link" : "nav__link"}>
                                 <i className="uil uil-briefcase-alt nav__icon"></i>
-                                Services
+                                {i18n.t('Header.navServices')}
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="#portfolio" onClick={() => setActiveNav('#portfolio')} className={activeNav === "#portfolio" ? "nav__link active-link" : "nav__link"}>
                                 <i className="uil uil-scenery nav__icon"></i>
-                                Portfolio
+                                {i18n.t('Header.navPortfolio')}
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === "#contact" ? "nav__link active-link" : "nav__link"}>
                                 <i className="uil uil-message nav__icon"></i>
-                                Contact
+                                {i18n.t('Header.navContact')}
                             </a>
                         </li>
                     </ul>
@@ -70,7 +85,7 @@ const Header = () => {
                 <div>
                     <ul className="nav__list-plus">
                         <li className="nav__item">
-                            <span className="nav__button nav__button-language"> Português (BR) </span>
+                            <span className="nav__button nav__button-language" onClick={() => {handleSelectChange(language)}}>{language}</span>
                         </li>
 
                         <li className="nav__item">
