@@ -12,7 +12,7 @@ const Backend = () => {
                 <i class='bx bx-badge-check'></i>
 
                 <div>
-                    <h3 className="skills__name">PHP</h3>
+                    <h3 className="skills__name">Java</h3>
                     <span className="skills__level">{i18n.t('Skills.intermediate')}</span>
                 </div>
                 </div>
@@ -21,8 +21,8 @@ const Backend = () => {
                 <i class='bx bx-badge-check'></i>
 
                 <div>
-                    <h3 className="skills__name">Node JS</h3>
-                    <span className="skills__level">{i18n.t('Skills.Basic')}</span>
+                    <h3 className="skills__name">Spring Boot</h3>
+                    <span className="skills__level">{i18n.t('Skills.intermediate')}</span>
                 </div>
                 </div>
 
@@ -30,8 +30,8 @@ const Backend = () => {
                 <i class='bx bx-badge-check'></i>
 
                 <div>
-                    <h3 className="skills__name">Python</h3>
-                    <span className="skills__level">{i18n.t('Skills.intermediate')}</span>
+                    <h3 className="skills__name">Kafka</h3>
+                    <span className="skills__level">{i18n.t('Skills.basic')}</span>
                 </div>
                 </div>
             </div>
@@ -41,8 +41,8 @@ const Backend = () => {
                 <i class='bx bx-badge-check'></i>
 
                 <div>
-                    <h3 className="skills__name">MySQL</h3>
-                    <span className="skills__level">{i18n.t('Skills.intermediate')}</span>
+                    <h3 className="skills__name">PostgreSQL</h3>
+                    <span className="skills__level">{i18n.t('Skills.basic')}</span>
                 </div>
                 </div>
 
@@ -50,8 +50,8 @@ const Backend = () => {
                 <i class='bx bx-badge-check'></i>
 
                 <div>
-                    <h3 className="skills__name">Firebase</h3>
-                    <span className="skills__level">{i18n.t('Skills.intermediate')}</span>
+                    <h3 className="skills__name">IBM MQ</h3>
+                    <span className="skills__level">{i18n.t('Skills.basic')}</span>
                 </div>
                 </div>
 
@@ -59,8 +59,8 @@ const Backend = () => {
                 <i class='bx bx-badge-check'></i>
 
                 <div>
-                    <h3 className="skills__name">SQL</h3>
-                    <span className="skills__level">{i18n.t('Skills.intermediate')}</span>
+                    <h3 className="skills__name">Redis</h3>
+                    <span className="skills__level">{i18n.t('Skills.basic')}</span>
                 </div>
                 </div>
             </div>

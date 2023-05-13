@@ -41,6 +41,8 @@ const messages = {
                 viewMore: "View More",
                 backendDeveloper: {
                     title: "Backend Developer",
+                    title1: "Backend",
+                    title2: "Developer",
                     description: "Service with more than 3 years of experience.Providing quality work to clients and companies.",
                     services1: "I develop the user interface.",
                     services2: "Web page development.",
@@ -50,6 +52,8 @@ const messages = {
                 },
                 devOpsDeveloper: {
                     title: "DevOps Developer",
+                    title1: "DevOps",
+                    title2: "Developer",
                     description: "Hello my name is Evert, born in the year 96 .....",
                     services1: "Java",
                     services2: "Sping Boot",
@@ -58,6 +62,8 @@ const messages = {
                 },
                 gameDeveloper: {
                     title: "Game Developer",
+                    title1: "Game",
+                    title2: "Developer",
                     description: "Hello my name is Evert, born in the year 96 .....",
                     services1: "Java",
                     services2: "Sping Boot",
@@ -71,47 +77,47 @@ const messages = {
                 education: {
                     title: "Education",
                     data1: {
-                        formation: "",
-                        institute: "",
-                        period: ""
+                        formation: "formation",
+                        institute: "institute",
+                        period: "period"
                     },
                     data2: {
-                        formation: "",
-                        institute: "",
-                        period: ""
+                        formation: "formation",
+                        institute: "institute",
+                        period: "period"
                     },
                     data3: {
-                        formation: "",
-                        institute: "",
-                        period: ""
+                        formation: "formation",
+                        institute: "institute",
+                        period: "period"
                     },
                     data4: {
-                        formation: "",
-                        institute: "",
-                        period: ""
+                        formation: "formation",
+                        institute: "institute",
+                        period: "period"
                     }
                 },
                 experience: {
                     title: "Experience",
                     data1: {
-                        formation: "",
-                        institute: "",
-                        period: ""
+                        formation: "formation",
+                        institute: "institute",
+                        period: "period"
                     },
                     data2: {
-                        formation: "",
-                        institute: "",
-                        period: ""
+                        formation: "formation",
+                        institute: "institute",
+                        period: "period"
                     },
                     data3: {
-                        formation: "",
-                        institute: "",
-                        period: ""
+                        formation: "formation",
+                        institute: "institute",
+                        period: "period"
                     },
                     data4: {
-                        formation: "",
-                        institute: "",
-                        period: ""
+                        formation: "formation",
+                        institute: "institute",
+                        period: "period"
                     }
                 }
             },

@@ -10,7 +10,7 @@ const messages = {
                 navContact: "Contato"
             },
             Home: {
-                description: "Olá meu nome é Evert, nascido no ano de 96 ......",
+                description: "Olá me chamo Evert, sou um desenvolvedor backend totalmente apaixonado, em busca cada vez mais de me especializar na área e superar a maior quantidade de desafios possível.",
                 ola: "Diga Olá",
                 scroll: "Ir Para Baixo"
             },
@@ -21,10 +21,10 @@ const messages = {
                 completed: "Concluído",
                 certifications: "Certificações",
                 certificates: "Certificados",
-                yearsWorking: "Anos Trabalhando",
+                yearsWorking: "Anos Trabalhados",
                 projects: "Projetos",
                 download: "Baixar CV",
-                description: "Olá meu nome é Evert, nascido no ano de 96 ......."
+                description: "Olá me chamo Evert, sou um desenvolvedor backend no momento trabalhando com o desenvolvimento do Pix e do Site Gestor para o cliente Bradesco, um dos maiores bancos da américa latina, tudo isso sendo possível por está trabalhando na Capgemini também uma das maiores empresas do mundo relacionada a desenvolvimento de software para grandes corporações."
             },
             Skills: {
                 title: "Habilidades",
@@ -41,6 +41,8 @@ const messages = {
                 viewMore: "Veja mais",
                 backendDeveloper: {
                     title: "Desenvolvedor Backend",
+                    title1: "Desenvolvedor",
+                    title2: "Backend",
                     description: "Serviço com mais de 3 anos de experiência. Prestando um trabalho de qualidade a clientes e empresas.",
                     services1: "Eu desenvolvo a interface do usuário.",
                     services2: "Desenvolvimento de página web.",
@@ -50,19 +52,25 @@ const messages = {
                 },
                 devOpsDeveloper: {
                     title: "Desenvolvedor DevOps",
+                    title1: "Desenvolvedor",
+                    title2: "DevOps",
                     description: "Olá meu nome é Evert, nascido no ano de 96 .......",
                     services1: "Java",
                     services2: "Sping Boot",
                     services3: "Lista MQ",
-                    services4: "Kafka"
+                    services4: "Kafka",
+                    services5: "Azure"
                 },
                 gameDeveloper: {
                     title: "Desenvolvedor Game",
+                    title1: "Desenvolvedor",
+                    title2: "Game",
                     description: "Olá meu nome é Evert, nascido no ano de 96 .......",
                     services1: "Java",
                     services2: "Sping Boot",
                     services3: "Lista MQ",
-                    services4: "Kafka"
+                    services4: "Kafka",
+                    services5: "Azure"
                 }
             },
             Qualification: {
@@ -71,47 +79,47 @@ const messages = {
                 education: {
                     title: "Educação",
                     data1: {
-                        formation: "",
-                        institute: "",
-                        period: ""
+                        formation: "formation",
+                        institute: "institute",
+                        period: "period"
                     },
                     data2: {
-                        formation: "",
-                        institute: "",
-                        period: ""
+                        formation: "formation",
+                        institute: "institute",
+                        period: "period"
                     },
                     data3: {
-                        formation: "",
-                        institute: "",
-                        period: ""
+                        formation: "formation",
+                        institute: "institute",
+                        period: "period"
                     },
                     data4: {
-                        formation: "",
-                        institute: "",
-                        period: ""
+                        formation: "formation",
+                        institute: "institute",
+                        period: "period"
                     }
                 },
                 experience: {
                     title: "Experiência",
                     data1: {
-                        formation: "",
-                        institute: "",
-                        period: ""
+                        formation: "formation",
+                        institute: "institute",
+                        period: "period"
                     },
                     data2: {
-                        formation: "",
-                        institute: "",
-                        period: ""
+                        formation: "formation",
+                        institute: "institute",
+                        period: "period"
                     },
                     data3: {
-                        formation: "",
-                        institute: "",
-                        period: ""
+                        formation: "formation",
+                        institute: "institute",
+                        period: "period"
                     },
                     data4: {
-                        formation: "",
-                        institute: "",
-                        period: ""
+                        formation: "formation",
+                        institute: "institute",
+                        period: "period"
                     }
                 }
             },
@@ -139,7 +147,7 @@ const messages = {
                 message: "Mensagem",
                 insertName: "Insira seu nome",
                 insertMail: "Insira seu e-mail",
-                insertMessage: "Escreva seu projeto",
+                insertMessage: "Escreva sua mensagem",
                 sendMessage: "Enviar"
             },
             Footer: {

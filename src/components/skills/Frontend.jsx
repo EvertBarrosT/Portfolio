@@ -22,7 +22,7 @@ const Frontend = () => {
 
                         <div>
                             <h3 className="skills__name">CSS</h3>
-                            <span className="skills__level">{i18n.t('Skills.Professional')}</span>
+                            <span className="skills__level">{i18n.t('Skills.professional')}</span>
                         </div>
                     </div>
 

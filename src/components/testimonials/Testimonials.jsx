@@ -1,6 +1,7 @@
 import React from 'react';
 import "./testimonials.css";
 import { Data } from "./Data";
+import { i18n } from "../translate/i18n";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -14,8 +15,8 @@ import { Pagination } from "swiper";
 const Testimonials = () => {
   return (
     <section className="testimonial container section" id="testimonials">
-         <h2 className="section__title">My clients say</h2>
-            <span className="section__subtitle">Testimonial</span>
+         <h2 className="section__title">{i18n.t('Testimonial.title')}</h2>
+            <span className="section__subtitle">{i18n.t('Testimonial.subtitle')}</span>
 
             <Swiper className="testimonial__container"
              grabCursor={true}

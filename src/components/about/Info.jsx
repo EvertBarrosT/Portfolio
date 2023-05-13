@@ -17,7 +17,7 @@ const Info = () => {
             </div>
 
             <div className="about__box">
-                <i class='bx bx-support about__icon' ></i>
+                <i class='bx bx-certification about__icon'></i>
                 <h3 className="about__title">{i18n.t('About.certifications')}</h3>
                 <span className="about__subtitle">0 {i18n.t('About.certificates')}</span>
             </div>

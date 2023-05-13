@@ -3,6 +3,7 @@ import Work2 from "../../assets/work2.jpg";
 import Work3 from "../../assets/work3.jpg";
 import Work4 from "../../assets/work4.jpg";
 import Work5 from "../../assets/work5.jpg";
+import { i18n } from "../translate/i18n"
 
 export const projectsData = [
     {
@@ -39,16 +40,16 @@ export const projectsData = [
 
 export const projectsNav = [
     {
-        name: "all",
+        name: `${i18n.t('Portfolio.all')}`,
     },
     {
-        name: "web",
+        name: `${i18n.t('Portfolio.web')}`,
     },
     {
-        name: "app",
+        name: `${i18n.t('Portfolio.apis')}`,
     },
     {
-        name: "design",
+        name: `${i18n.t('Portfolio.architecture')}`,
     },
 ]
 
