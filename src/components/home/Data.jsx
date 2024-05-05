@@ -1,6 +1,8 @@
-import { i18n } from "../translate/i18n";
+import { useTranslation } from "react-i18next";
 
 const Data = () => {
+    const {t, i18n} = useTranslation();
+    
     return (
         <div className="home__data">
             <h1 className="home__title">
@@ -56,9 +58,9 @@ const Data = () => {
                 </svg>
             </h1>
             <h3 className="home__subtitle">Back-end</h3>
-            <p className="home__description">{i18n.t("Home.description")}</p>
+            <p className="home__description">{t("Home.description")}</p>
             <a href="#contact" className="button button--flex">
-                {i18n.t('Home.ola')}
+                {t('Home.ola')}
                 <svg
                     class="button__icon"
                     xmlns="http://www.w3.org/2000/svg"

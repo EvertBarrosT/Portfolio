@@ -1,8 +1,10 @@
 import React from 'react'
 import "./footer.css"
-import { i18n } from "../translate/i18n"
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+    const {t, i18n} = useTranslation();
+
     return (
         <footer className="footer">
             <div className="footer__container container">
@@ -10,15 +12,15 @@ const Footer = () => {
 
                 <ul className="footer__list">
                     <li>
-                        <a href="#about" className="footer__link">{i18n.t('Footer.about')}</a>
+                        <a href="#about" className="footer__link">{t('Footer.about')}</a>
                     </li>
 
                     <li>
-                        <a href="#portfolio" className="footer__link">{i18n.t('Footer.projects')}</a>
+                        <a href="#portfolio" className="footer__link">{t('Footer.projects')}</a>
                     </li>
 
                     <li>
-                        <a href="#testimonials" className="footer__link">{i18n.t('Footer.testimonials')}</a>
+                        <a href="#testimonials" className="footer__link">{t('Footer.testimonials')}</a>
                     </li>
                 </ul>
 
@@ -36,7 +38,7 @@ const Footer = () => {
                     </a>
                 </div>
 
-                <span className="footer__copy">&#169; Evert Barros. {i18n.t('Footer.allRigthsReserved')}</span>
+                <span className="footer__copy">&#169; Evert Barros. {t('Footer.allRigthsReserved')}</span>
             </div>
         </footer>
     )

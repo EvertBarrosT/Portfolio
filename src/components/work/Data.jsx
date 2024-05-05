@@ -3,7 +3,9 @@ import Work2 from "../../assets/work2.jpg";
 import Work3 from "../../assets/work3.jpg";
 import Work4 from "../../assets/work4.jpg";
 import Work5 from "../../assets/work5.jpg";
-import { i18n } from "../translate/i18n"
+import { useTranslation } from "react-i18next";
+
+
 
 export const projectsData = [
     {
@@ -38,20 +40,24 @@ export const projectsData = [
     },
 ];
 
-export const projectsNav = [
-    {
-        name: `${i18n.t('Portfolio.all')}`,
-    },
-    {
-        name: `${i18n.t('Portfolio.web')}`,
-    },
-    {
-        name: `${i18n.t('Portfolio.apis')}`,
-    },
-    {
-        name: `${i18n.t('Portfolio.architecture')}`,
-    },
-]
+export const getProjectsNav = () => {
+    const {t, i18n} = useTranslation();
+
+    return [
+        {
+            name: `${t('Portfolio.all')}`,
+        },
+        {
+            name: `${t('Portfolio.web')}`,
+        },
+        {
+            name: `${t('Portfolio.apis')}`,
+        },
+        {
+            name: `${t('Portfolio.architecture')}`,
+        },
+    ]
+}
 
 
 

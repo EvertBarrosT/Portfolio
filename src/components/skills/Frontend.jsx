@@ -1,10 +1,12 @@
 import React from 'react'
-import { i18n } from "../translate/i18n";
+import { useTranslation } from "react-i18next";
 
 const Frontend = () => {
+    const {t, i18n} = useTranslation();
+
     return (
         <div className="skills__content">
-            <h3 className="skills__title">{i18n.t('Skills.frontend')}</h3>
+            <h3 className="skills__title">{t('Skills.frontend')}</h3>
 
             <div className="skills__box">
                 <div className="skills__group">
@@ -13,7 +15,7 @@ const Frontend = () => {
 
                         <div>
                             <h3 className="skills__name">HTML</h3>
-                            <span className="skills__level">{i18n.t('Skills.basic')}</span>
+                            <span className="skills__level">{t('Skills.basic')}</span>
                         </div>
                     </div>
 
@@ -22,7 +24,7 @@ const Frontend = () => {
 
                         <div>
                             <h3 className="skills__name">CSS</h3>
-                            <span className="skills__level">{i18n.t('Skills.professional')}</span>
+                            <span className="skills__level">{t('Skills.professional')}</span>
                         </div>
                     </div>
 
@@ -31,7 +33,7 @@ const Frontend = () => {
 
                         <div>
                             <h3 className="skills__name">JavaScript</h3>
-                            <span className="skills__level">{i18n.t('Skills.intermediate')}</span>
+                            <span className="skills__level">{t('Skills.intermediate')}</span>
                         </div>
                     </div>
                 </div>
@@ -42,7 +44,7 @@ const Frontend = () => {
 
                         <div>
                             <h3 className="skills__name">Bootstrap</h3>
-                            <span className="skills__level">{i18n.t('Skills.intermediate')}</span>
+                            <span className="skills__level">{t('Skills.intermediate')}</span>
                         </div>
                     </div>
 
@@ -51,7 +53,7 @@ const Frontend = () => {
 
                         <div>
                             <h3 className="skills__name">Git</h3>
-                            <span className="skills__level">{i18n.t('Skills.intermediate')}</span>
+                            <span className="skills__level">{t('Skills.intermediate')}</span>
                         </div>
                     </div>
 
@@ -60,7 +62,7 @@ const Frontend = () => {
 
                         <div>
                             <h3 className="skills__name">React</h3>
-                            <span className="skills__level">{i18n.t('Skills.intermediate')}</span>
+                            <span className="skills__level">{t('Skills.intermediate')}</span>
                         </div>
                     </div>
                 </div>

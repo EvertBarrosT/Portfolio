@@ -1,10 +1,11 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import "./contact.css";
-import { i18n } from "../translate/i18n";
+import { useTranslation } from "react-i18next";
 
 
 const Contact = () => {
+    const {t, i18n} = useTranslation();
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -16,12 +17,12 @@ const Contact = () => {
 
     return (
         <section className="contact section" id="contact">
-            <h2 className="section__title">{i18n.t('Contact.title')}</h2>
-            <span className="section__subtitle">{i18n.t('Contact.subtitle')}</span>
+            <h2 className="section__title">{t('Contact.title')}</h2>
+            <span className="section__subtitle">{t('Contact.subtitle')}</span>
 
             <div className="contact__container container grid">
                 <div className="contact__content">
-                    <h3 className="contact__title">{i18n.t('Contact.talkToMe')}</h3>
+                    <h3 className="contact__title">{t('Contact.talkToMe')}</h3>
 
                     <div className="contact__info">
                         <div className="contact__card">
@@ -30,7 +31,7 @@ const Contact = () => {
                             <h3 className="contact__card-title">Email</h3>
                             <span className="contact__card-data">Evertbarros@hotmail.com</span>
 
-                            <a href="mailto:examplemail@gmail.com" className="contact__button">{i18n.t('Contact.writeMe')}<i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                            <a href="mailto:examplemail@gmail.com" className="contact__button">{t('Contact.writeMe')}<i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
 
                         <div className="contact__card">
@@ -39,7 +40,7 @@ const Contact = () => {
                             <h3 className="contact__card-title">Whatsapp</h3>
                             <span className="contact__card-data">(71) 99287-4822</span>
 
-                            <a href="https://api.whatsapp.com/send?phone=71992874822&text=Hello, more information!" className="contact__button">{i18n.t('Contact.writeMe')}<i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=71992874822&text=Hello, more information!" className="contact__button">{t('Contact.writeMe')}<i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
 
                         <div className="contact__card">
@@ -48,32 +49,32 @@ const Contact = () => {
                             <h3 className="contact__card-title">Messenger</h3>
                             <span className="contact__card-data">user.figer</span>
 
-                            <a href="https://m.me/crypticalcoder" className="contact__button">{i18n.t('Contact.writeMe')}<i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                            <a href="https://m.me/crypticalcoder" className="contact__button">{t('Contact.writeMe')}<i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <div className="contact__content">
-                    <h3 className="contact__title">{i18n.t('Contact.insertMessage')}</h3>
+                    <h3 className="contact__title">{t('Contact.insertMessage')}</h3>
 
                     <form ref={form} onSubmit={sendEmail} className="contact__form">
                         <div className="contact__form-div">
-                            <label className="contact__form-tag">{i18n.t('Contact.name')}</label>
-                            <input type="text" name="name" className="contact__form-input" placeholder={i18n.t('Contact.insertName')} />
+                            <label className="contact__form-tag">{t('Contact.name')}</label>
+                            <input type="text" name="name" className="contact__form-input" placeholder={t('Contact.insertName')} />
                         </div>
 
                         <div className="contact__form-div">
-                            <label className="contact__form-tag">{i18n.t('Contact.mail')}</label>
-                            <input type="email" name="email" className="contact__form-input" placeholder={i18n.t('Contact.insertMail')} />
+                            <label className="contact__form-tag">{t('Contact.mail')}</label>
+                            <input type="email" name="email" className="contact__form-input" placeholder={t('Contact.insertMail')} />
                         </div>
 
                         <div className="contact__form-div contact__form-area">
-                            <label className="contact__form-tag">{i18n.t('Contact.message')}</label>
-                            <textarea name="project" cols="30" rows="10" className="contact__form-input" placeholder={i18n.t('Contact.insertMessage')}></textarea>
+                            <label className="contact__form-tag">{t('Contact.message')}</label>
+                            <textarea name="project" cols="30" rows="10" className="contact__form-input" placeholder={t('Contact.insertMessage')}></textarea>
                         </div>
 
                         <button className="button button--flex">
-                            {i18n.t('Contact.sendMessage')}
+                            {t('Contact.sendMessage')}
                             <svg
                                 class="button__icon"
                                 xmlns="http://www.w3.org/2000/svg"

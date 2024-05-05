@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { projectsData } from "./Data"
-import { projectsNav } from './Data'
+import { getProjectsNav } from './Data'
 import WorksItems from './WorksItems';
 
 const Works = () => {
@@ -26,7 +26,7 @@ const Works = () => {
     return (
         <div>
             <div className="work__filters">
-                {projectsNav.map((item, index) => {
+                {getProjectsNav().map((item, index) => {
                     return <span onClick={(e) => {
                         handleClick(e, index);
                     }} className={`${active === index ? 'active-work': ''} work__item`} key={index}>{item.name}</span>;

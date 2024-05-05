@@ -1,7 +1,7 @@
 import React from 'react';
 import "./testimonials.css";
 import { Data } from "./Data";
-import { i18n } from "../translate/i18n";
+import { useTranslation } from "react-i18next";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -13,10 +13,12 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 
 const Testimonials = () => {
+  const {t, i18n} = useTranslation();
+
   return (
     <section className="testimonial container section" id="testimonials">
-         <h2 className="section__title">{i18n.t('Testimonial.title')}</h2>
-            <span className="section__subtitle">{i18n.t('Testimonial.subtitle')}</span>
+         <h2 className="section__title">{t('Testimonial.title')}</h2>
+            <span className="section__subtitle">{t('Testimonial.subtitle')}</span>
 
             <Swiper className="testimonial__container"
              grabCursor={true}

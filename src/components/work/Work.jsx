@@ -1,13 +1,14 @@
 import React from 'react'
 import "./work.css"
 import Works from './Works'
-import { i18n } from "../translate/i18n"
+import { useTranslation } from "react-i18next";
 
 const Work = () => {
+  const {t, i18n} = useTranslation();
   return (
     <section className="word section" id='portfolio'>
-        <h2 className="section__title">{i18n.t('Portfolio.title')}</h2>
-        <span className="section__subtitle">{i18n.t('Portfolio.subtitle')}</span>
+        <h2 className="section__title">{t('Portfolio.title')}</h2>
+        <span className="section__subtitle">{t('Portfolio.subtitle')}</span>
 
         <Works/>
     </section>

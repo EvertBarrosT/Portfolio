@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import "./header.css";
-import { i18n } from "../translate/i18n";
+
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+    const {t, i18n} = useTranslation();
+
     /*=============== Change Website Language ===============*/
     const handleSelectChange = (languageType) => {
         if(languageType === "Português (BR)") {
@@ -39,42 +42,42 @@ const Header = () => {
                         <li className="nav__item">
                             <a href="#home" onClick={() => setActiveNav('#home')} className={activeNav === "#home" ? "nav__link active-link" : "nav__link"}>
                                 <i className="uil uil-estate nav__icon"></i>
-                                {i18n.t('Header.navHome')}
+                                {t('Header.navHome')}
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === "#about" ? "nav__link active-link" : "nav__link"}>
                                 <i className="uil uil-user nav__icon"></i>
-                                {i18n.t('Header.navAbout')}
+                                {t('Header.navAbout')}
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="#skills" onClick={() => setActiveNav('#skills')} className={activeNav === "#skills" ? "nav__link active-link" : "nav__link"}>
                                 <i className="uil uil-file-alt nav__icon"></i>
-                                {i18n.t('Header.navSkills')}
+                                {t('Header.navSkills')}
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="#services" onClick={() => setActiveNav('#services')} className={activeNav === "#services" ? "nav__link active-link" : "nav__link"}>
                                 <i className="uil uil-briefcase-alt nav__icon"></i>
-                                {i18n.t('Header.navServices')}
+                                {t('Header.navServices')}
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="#portfolio" onClick={() => setActiveNav('#portfolio')} className={activeNav === "#portfolio" ? "nav__link active-link" : "nav__link"}>
                                 <i className="uil uil-scenery nav__icon"></i>
-                                {i18n.t('Header.navPortfolio')}
+                                {t('Header.navPortfolio')}
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === "#contact" ? "nav__link active-link" : "nav__link"}>
                                 <i className="uil uil-message nav__icon"></i>
-                                {i18n.t('Header.navContact')}
+                                {t('Header.navContact')}
                             </a>
                         </li>
                     </ul>
