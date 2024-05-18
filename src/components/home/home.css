@@ -1,3 +1,28 @@
+/* styles.css */
+.image {
+    background-size: cover;
+    background-position: center;
+    width: 48rem;
+    height: 50rem;
+    border-radius: 0% 0% 100% 100%;
+}
+
+.half-image {
+    position: absolute;
+    top: 5rem;
+}
+
+.designer-image {
+    background-image: url('src/assets/euIa.png');
+    animation: profile__animate2 10s infinite;
+}
+
+.coder-image {
+    background-image: url('src/assets/euPerson2.png');
+    animation: profile__animate 10s infinite;
+}
+
+/* ------ */
 .home__container {
     row-gap: 7rem;
 
@@ -60,29 +85,41 @@
 }
 
 .home__img {
-    background: url(../../assets//eu.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
     order: 1;
     justify-self: center;
+    display: flex;
     width: 300px;
-    height: 300px;
     animation: profile__animate 8s ease-in-out infinite 1s;
 }
 
 @keyframes profile__animate {
     0% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        clip: rect(0rem, 100rem, 100rem, 35rem);
     }
 
     50% {
-        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+        clip: rect(0rem, 100rem, 100rem, 5em);
     }
 
     100% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        clip: rect(0rem, 100rem, 100rem, 35rem);
+    }
+}
+
+@keyframes profile__animate2 {
+    0% {
+        clip: rect(0rem, 35rem, 100rem, 0rem);
+    }
+
+    50% {
+        clip: rect(0rem, 5rem, 100rem, 0em);
+    }
+
+    100% {
+        clip: rect(0rem, 35rem, 100rem, 0rem);
     }
 }
 
@@ -150,8 +187,41 @@
         box-shadow: inset 0 0 0 8px rgb(255 255 255 / 30%);
     }
 
+    .image {
+        width: 18rem;
+        height: 48rem;
+    }
+
     .home__scroll {
         margin-left: 7.5rem;
+    }
+
+    @keyframes profile__animate {
+        0% {
+            clip: rect(0rem, 100rem, 100rem, 18rem);
+        }
+
+        50% {
+            clip: rect(0rem, 100rem, 100rem, 2em);
+        }
+
+        100% {
+            clip: rect(0rem, 100rem, 100rem, 18rem);
+        }
+    }
+
+    @keyframes profile__animate2 {
+        0% {
+            clip: rect(0rem, 18rem, 100rem, 0rem);
+        }
+    
+        50% {
+            clip: rect(0rem, 2rem, 100rem, 0em);
+        }
+    
+        100% {
+            clip: rect(0rem, 18rem, 100rem, 0rem);
+        }
     }
 }
 
@@ -164,10 +234,15 @@
 
     .home__img {
         order: initial;
-        justify-self: initial;
+        justify-self: center;
         box-shadow: inset 0 0 0 6px rgb(255 255 255 / 30%);
-        width: 200px;
-        height: 200px;
+        width: 20rem;
+        height: 18rem;
+    }
+
+    .image {
+        width: 15rem;
+        height: 25rem;
     }
 
     .home__data {
@@ -177,14 +252,75 @@
     .home__scroll {
         display: none;
     }
+
+    @keyframes profile__animate {
+        0% {
+            clip: rect(0rem, 100rem, 100rem, 12rem);
+        }
+
+        50% {
+            clip: rect(0rem, 100rem, 100rem, 4em);
+        }
+
+        100% {
+            clip: rect(0rem, 100rem, 100rem, 12rem);
+        }
+    }
+
+    @keyframes profile__animate2 {
+        0% {
+            clip: rect(0rem, 12rem, 100rem, 0rem);
+        }
+    
+        50% {
+            clip: rect(0rem, 4rem, 100rem, 0em);
+        }
+    
+        100% {
+            clip: rect(0rem, 12rem, 100rem, 0rem);
+        }
+    }
 }
 
 
 /* For small devices */
 @media screen and (max-width: 350px) {
     .home__img {
-        width: 180px;
-        height: 180px;
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .image {
+        width: 15rem;
+        height: 25rem;
+    }
+
+    @keyframes profile__animate {
+        0% {
+            clip: rect(0rem, 100rem, 100rem, 13rem);
+        }
+
+        50% {
+            clip: rect(0rem, 100rem, 100rem, 4em);
+        }
+
+        100% {
+            clip: rect(0rem, 100rem, 100rem, 13rem);
+        }
+    }
+
+    @keyframes profile__animate2 {
+        0% {
+            clip: rect(0rem, 13rem, 100rem, 0rem);
+        }
+    
+        50% {
+            clip: rect(0rem, 4rem, 100rem, 0em);
+        }
+    
+        100% {
+            clip: rect(0rem, 13rem, 100rem, 0rem);
+        }
     }
 
     .home__hand {

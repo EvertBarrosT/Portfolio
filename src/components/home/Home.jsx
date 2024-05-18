@@ -6,16 +6,19 @@ import ScrollDown from "./ScrollDown"
 const Home = () => {
   return (
     <section className="home section" id="home">
-        <div className="home__container container grid">
-            <div className="home__content grid">
-                <Social/>
+      <div className="home__container container grid">
+        <div className="home__content grid">
+          <Social />
 
-                <div className="home__img"></div>
-
-                <Data/>
-            </div>
-            <ScrollDown/>
+          {/* <div className="home__img"></div> */}
+          <div class="home__img">
+            <div class="image half-image designer-image"></div>
+            <div class="image half-image coder-image"></div>
+          </div>
+          <Data />
         </div>
+        <ScrollDown />
+      </div>
     </section>
   )
 }

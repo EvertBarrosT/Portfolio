@@ -10,7 +10,7 @@ const messages = {
                 navContact: "Contato"
             },
             Home: {
-                description: "Olá me chamo Evert, sou um desenvolvedor backend totalmente apaixonado, em busca cada vez mais de me especializar na área e superar a maior quantidade de desafios possível.",
+                description: "Seu colega desenvolvedor back-end, especialista em arquitetura de sistemas e mestre em lógica de programação. Passo minhas horas (e muitas vezes madrugadas) construindo a estrutura invisível da web com projetos e linhas de código, transformando algoritmos em sistemas robustos e eficientes.",
                 ola: "Diga Olá",
                 scroll: "Ir Para Baixo"
             },
@@ -24,7 +24,7 @@ const messages = {
                 yearsWorking: "Anos Trabalhados",
                 projects: "Projetos",
                 download: "Baixar CV",
-                description: "Olá me chamo Evert, sou um desenvolvedor backend no momento trabalhando com o desenvolvimento do Pix e do Site Gestor para o cliente Bradesco, um dos maiores bancos da américa latina, tudo isso sendo possível por está trabalhando na Capgemini também uma das maiores empresas do mundo relacionada a desenvolvimento de software para grandes corporações."
+                description: "Olá! Meu nome é Evert e sou desenvolvedor backend, atualmente trabalhando no desenvolvimento do Pix e do Site Gestor para o cliente Bradesco, através da Capgemini. No meu dia a dia, utilizo tecnologias como <strong> Java, Spring Boot, Java EE, DB2, Kafka, FilaMQ, Redis, Docker e MongoDB </strong> para criar soluções robustas e eficientes. Além disso, nas horas vagas, me aventuro em novos mundos desenvolvendo jogos com <strong>Unity</strong>."
             },
             Skills: {
                 title: "Habilidades",

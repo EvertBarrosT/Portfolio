@@ -10,7 +10,7 @@ const messages = {
                 navContact: "Contact"
             },
             Home: {
-                description: "Hello my name is Evert, born in the year 96 .....",
+                description: "Your friendly backend developer, system architecture expert, and master of programming logic. I spend my hours (and often late nights) weaving the invisible framework of the web with projects and lines of code, turning algorithms into robust and efficient systems.",
                 ola: "Say Hello",
                 scroll: "Scroll Down"
             },

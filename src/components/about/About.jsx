@@ -3,7 +3,7 @@ import './about.css';
 import AboutImg from '../../assets/EuGrande.jpg';
 import CV from '../../assets/EvertBarros-Curriculo.pdf';
 import Info from './Info';
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 const About = () => {
     const {t, i18n} = useTranslation();
@@ -19,10 +19,11 @@ const About = () => {
                 <div className="about__data">
                     <Info />
 
+                    <Trans>
                     <p className="about__description">
                         {t('About.description')}
                     </p>
-
+                    </Trans>
                     <a download="" href={CV} className="button button--flex">
                         {t('About.download')}
                         <svg
