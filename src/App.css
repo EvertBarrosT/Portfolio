@@ -19,13 +19,13 @@
   --body-font: "Poppins", sans-serif;
 
   /*.5rem = 8px | 1rem = 16px ...*/
-  --big-font-size: 3.5rem;
+  --big-font-size: 4.5rem;
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.25rem;
   --normal-font-size: 1rem;
-  --small-font-size: 0.875rem;
-  --smaller-font-size: 0.813rem;
+  --small-font-size: 0.895rem;
+  --smaller-font-size: 0.833rem;
   --tiny-font-size: 0.625rem;
 
   /*========== Font weight ==========*/
@@ -136,7 +136,7 @@ img {
 
 /*=============== LAYOUT ===============*/
 .container {
-  max-width: 968px;
+  max-width: 95%;
   margin-left: auto;
   margin-right: auto;
 }

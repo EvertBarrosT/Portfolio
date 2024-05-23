@@ -10,10 +10,8 @@ const Home = () => {
         <div className="home__content grid">
           <Social />
 
-          {/* <div className="home__img"></div> */}
-          <div class="home__img">
-            <div class="image half-image designer-image"></div>
-            <div class="image half-image coder-image"></div>
+          <div className="home__img">
+            <img src="src/assets/euIa.png" alt="Imagem 1" className="img_pessoal"/>
           </div>
           <Data />
         </div>

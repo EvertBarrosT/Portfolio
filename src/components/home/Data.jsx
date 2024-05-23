@@ -5,6 +5,7 @@ const Data = () => {
     
     return (
         <div className="home__data">
+            <h3 className="home__oi">{t("Home.oi")}</h3>
             <h1 className="home__title">
                 Evert Barros
                 <svg

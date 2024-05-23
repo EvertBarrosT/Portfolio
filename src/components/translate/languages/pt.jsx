@@ -10,6 +10,7 @@ const messages = {
                 navContact: "Contato"
             },
             Home: {
+                oi: "Oi ! Eu sou",
                 description: "Seu colega desenvolvedor back-end, especialista em arquitetura de sistemas e mestre em lógica de programação. Passo minhas horas (e muitas vezes madrugadas) construindo a estrutura invisível da web com projetos e linhas de código, transformando algoritmos em sistemas robustos e eficientes.",
                 ola: "Diga Olá",
                 scroll: "Ir Para Baixo"
