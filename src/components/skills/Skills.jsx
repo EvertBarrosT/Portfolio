@@ -1,6 +1,8 @@
 import React from 'react';
 import Frontend from './Frontend';
 import Backend from './Backend';
+import DevOps from './DevOps';
+import Tecnologia from './Tecnologia';
 import './skills.css';
 import { useTranslation } from "react-i18next";
 
@@ -15,6 +17,8 @@ const Skills = () => {
             <div className="skills__container container grid">
                 <Frontend/>
                 <Backend/>
+                <Tecnologia/>
+                <DevOps/>
             </div>
         </section>
     )

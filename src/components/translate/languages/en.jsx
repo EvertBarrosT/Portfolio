@@ -25,13 +25,15 @@ const messages = {
                 yearsWorking: "Years Workin",
                 projects: "Projects",
                 download: "Download CV",
-                description: "Hello my name is Evert, born in the year 96 ....."
+                description: "Hello! My name is Evert and I am a backend developer, currently working on the development of Pix and Site Gestor for the client Bradesco, through Capgemini. In my daily work, I use technologies such as <strong> Java, Spring Boot, Java EE, DB2, Kafka, FilaMQ, Redis, Docker, and MongoDB </strong> to create robust and efficient solutions. Additionally, in my spare time, I explore new worlds by developing games with <strong> Unity </strong>."
             },
             Skills: {
                 title: "Skills",
                 subtitle: "My technical level",
-                backend: "Backend Developer",
-                frontend: "Frontend Developer",
+                backend: "Backend",
+                frontend: "Frontend",
+                devops: "DevOps",
+                tecnologia: "Technologies",
                 basic: "Basic",
                 intermediate: "Intermediate",
                 professional: "Professional"

@@ -30,8 +30,10 @@ const messages = {
             Skills: {
                 title: "Habilidades",
                 subtitle: "Meu Nível Técnico",
-                backend: "Desenvolvedor Backend",
-                frontend: "Desenvolvedor Frontend",
+                backend: "Backend",
+                frontend: "Frontend",
+                devops: "DevOps",
+                tecnologia: "Tecnologia",
                 basic: "Básico",
                 intermediate: "Intermediário",
                 professional: "Profissional"

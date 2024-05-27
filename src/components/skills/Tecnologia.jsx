@@ -1,12 +1,12 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
 
-const Backend = () => {
+const Tecnologia = () => {
     const { t, i18n } = useTranslation();
 
     return (
         <div className="skills__content">
-            <h3 className="skills__title">{t('Skills.backend')}</h3>
+            <h3 className="skills__title">{t('Skills.tecnologia')}</h3>
 
             <div className="skills__box">
                 <div className="skills__group">
@@ -14,7 +14,7 @@ const Backend = () => {
                         <i class='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">Java</h3>
+                            <h3 className="skills__name">Jira</h3>
                             <span className="skills__level">{t('Skills.intermediate')}</span>
                         </div>
                     </div>
@@ -23,7 +23,16 @@ const Backend = () => {
                         <i class='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">Python</h3>
+                            <h3 className="skills__name">Bitbucket</h3>
+                            <span className="skills__level">{t('Skills.professional')}</span>
+                        </div>
+                    </div>
+
+                    <div className="skills__data">
+                        <i class='bx bx-badge-check'></i>
+
+                        <div>
+                            <h3 className="skills__name">Confluence</h3>
                             <span className="skills__level">{t('Skills.basic')}</span>
                         </div>
                     </div>
@@ -32,7 +41,7 @@ const Backend = () => {
                         <i class='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">Spring Boot</h3>
+                            <h3 className="skills__name">VSCode</h3>
                             <span className="skills__level">{t('Skills.intermediate')}</span>
                         </div>
                     </div>
@@ -41,7 +50,7 @@ const Backend = () => {
                         <i class='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">JavaEE</h3>
+                            <h3 className="skills__name">Eclipse</h3>
                             <span className="skills__level">{t('Skills.intermediate')}</span>
                         </div>
                     </div>
@@ -50,8 +59,8 @@ const Backend = () => {
                         <i class='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">Kafka</h3>
-                            <span className="skills__level">{t('Skills.basic')}</span>
+                            <h3 className="skills__name">Maven</h3>
+                            <span className="skills__level">{t('Skills.intermediate')}</span>
                         </div>
                     </div>
                 </div>
@@ -61,7 +70,43 @@ const Backend = () => {
                         <i class='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">PostgreSQL</h3>
+                            <h3 className="skills__name">Bamboo</h3>
+                            <span className="skills__level">{t('Skills.intermediate')}</span>
+                        </div>
+                    </div>
+
+                    <div className="skills__data">
+                        <i class='bx bx-badge-check'></i>
+
+                        <div>
+                            <h3 className="skills__name">Npm</h3>
+                            <span className="skills__level">{t('Skills.intermediate')}</span>
+                        </div>
+                    </div>
+
+                    <div className="skills__data">
+                        <i class='bx bx-badge-check'></i>
+
+                        <div>
+                            <h3 className="skills__name">Git/GitHub</h3>
+                            <span className="skills__level">{t('Skills.intermediate')}</span>
+                        </div>
+                    </div>
+
+                    <div className="skills__data">
+                        <i class='bx bx-badge-check'></i>
+
+                        <div>
+                            <h3 className="skills__name">DBeaver</h3>
+                            <span className="skills__level">{t('Skills.intermediate')}</span>
+                        </div>
+                    </div>
+
+                    <div className="skills__data">
+                        <i class='bx bx-badge-check'></i>
+
+                        <div>
+                            <h3 className="skills__name">Figma</h3>
                             <span className="skills__level">{t('Skills.basic')}</span>
                         </div>
                     </div>
@@ -70,35 +115,8 @@ const Backend = () => {
                         <i class='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">IBM MQ</h3>
-                            <span className="skills__level">{t('Skills.basic')}</span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i class='bx bx-badge-check'></i>
-
-                        <div>
-                            <h3 className="skills__name">DB2</h3>
-                            <span className="skills__level">{t('Skills.basic')}</span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i class='bx bx-badge-check'></i>
-
-                        <div>
-                            <h3 className="skills__name">Redis</h3>
-                            <span className="skills__level">{t('Skills.basic')}</span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i class='bx bx-badge-check'></i>
-
-                        <div>
-                            <h3 className="skills__name">MongoDB</h3>
-                            <span className="skills__level">{t('Skills.basic')}</span>
+                            <h3 className="skills__name">Linux</h3>
+                            <span className="skills__level">{t('Skills.intermediate')}</span>
                         </div>
                     </div>
                 </div>
@@ -107,4 +125,4 @@ const Backend = () => {
     )
 }
 
-export default Backend
+export default Tecnologia

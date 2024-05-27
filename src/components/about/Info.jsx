@@ -9,7 +9,7 @@ const Info = () => {
             <div className="about__box">
                 <i class='bx bx-award about__icon'></i>
                 <h3 className="about__title">{t('About.experience')}</h3>
-                <span className="about__subtitle">2 {t('About.yearsWorking')}</span>
+                <span className="about__subtitle">3 {t('About.yearsWorking')}</span>
             </div>
 
             <div className="about__box">

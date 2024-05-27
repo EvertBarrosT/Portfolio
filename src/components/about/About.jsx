@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.css';
-import AboutImg from '../../assets/EuGrande.jpg';
+import AboutImg from '../../assets/euIa2.jpg';
 import CV from '../../assets/EvertBarros-Curriculo.pdf';
 import Info from './Info';
 import { Trans, useTranslation } from "react-i18next";
