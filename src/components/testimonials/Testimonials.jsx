@@ -10,7 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper";
+import { Pagination } from 'swiper/modules';
 
 const Testimonials = () => {
   const {t, i18n} = useTranslation();
