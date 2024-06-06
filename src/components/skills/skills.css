@@ -4,20 +4,34 @@
     align-items: center;
     justify-content: center;
     column-gap: .9rem;
+    height: 200px;
 }
 
-/*=============== BREAKPOINTS ===============*/
+.swiper-button-prev, .swiper-button-next {
+    color: var(--title-color);
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 2rem;
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: 90%;
+}
+
+/*=============== Swiper { ===============*/
 .skills__container {
     grid-template-columns: repeat(2, 350px);
-    column-gap: 3rem;
+    column-gap: 5rem;
     justify-content: center;
 }
 
 .skills__content {
     background-color: var(--container-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 2rem 4rem;
+    padding: .5rem;
     border-radius: 1.25rem;
+    width: 400px;
 }
 
 .skills__title {
@@ -63,20 +77,33 @@
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
+    .skills__box {
+        width: 500px;
+    }
     .skills__container {
         grid-template-columns: max-content;
         row-gap: 2rem;
+    }
+
+    .skills__content {
+        width: auto;
     }
 }
 
 /* For medium devices */
 @media screen and (max-width: 576px) {
+    .skills__box {
+        column-gap: 1.25rem;
+        width: 320px;
+    }
     .skills__container {
-        grid-template-columns: 1fr;
+        grid-template-columns: max-content;
+        row-gap: 2rem;
     }
 
     .skills__content {
         padding: 1.5rem;
+        width: auto;
     }
 }
 
@@ -84,9 +111,14 @@
 @media screen and (max-width: 350px) {
     .skills__box {
         column-gap: 1.25rem;
+        width: 290px;
     }
 
     .skills__name {
         font-size: var(--small-font-size);
+    }
+
+    .skills__content {
+        width: auto;
     }
 }

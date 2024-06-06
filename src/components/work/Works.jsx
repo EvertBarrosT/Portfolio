@@ -20,7 +20,16 @@ const Works = () => {
     }, [item]);
 
     const handleClick = (e, index) => {
-        setItem({ name: e.target.textContent.toLowerCase() });
+        let valoresFiltros = new Map();
+
+        valoresFiltros.set("sites", "web");
+        valoresFiltros.set("todos", "all");
+        valoresFiltros.set("arquitetura", "architecture");
+
+        let filtro = valoresFiltros.has(e.target.textContent.toLowerCase()) ? valoresFiltros.get(e.target.textContent.toLowerCase()) : e.target.textContent.toLowerCase();
+        
+        console.log(filtro)
+        setItem({ name: filtro });
         setActive(index);
     };
     return (

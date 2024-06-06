@@ -38,6 +38,18 @@ export const projectsData = [
         title: "Web design",
         category: "web",
     },
+    {
+        id: 6,
+        image: Work4,
+        title: "Api Pokemon",
+        category: "apis",
+    },
+    {
+        id: 7,
+        image: Work2,
+        title: "Arquitetura PicPay",
+        category: "architecture",
+    },
 ];
 
 export const getProjectsNav = () => {

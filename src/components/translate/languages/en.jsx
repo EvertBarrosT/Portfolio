@@ -80,48 +80,43 @@ const messages = {
                 education: {
                     title: "Education",
                     data1: {
-                        formation: "formation",
-                        institute: "institute",
-                        period: "period"
+                        formation: "Mechatronics Engineering",
+                        institute: "Universidade Salvador - UNIFACS",
+                        period: " INCOMPLETE - 8 SEMESTERS"
                     },
                     data2: {
-                        formation: "formation",
-                        institute: "institute",
-                        period: "period"
+                        formation: "Technical - Industrial Automation",
+                        institute: "Serviço Nacional De Aprendizagem Industrial - SENAI",
+                        period: " 01/2018 - 06/2020"
                     },
                     data3: {
-                        formation: "formation",
-                        institute: "institute",
-                        period: "period"
+                        formation: "Software Analysis and Development",
+                        institute: "Universidade Católica Do Salvador - UCSAL",
+                        period: " INCOMPLETE - 2 SEMESTERS"
                     },
                     data4: {
-                        formation: "formation",
-                        institute: "institute",
-                        period: "period"
+                        formation: "Software Engineering",
+                        institute: "Universidade Estácio de Sá",
+                        period: " 11/2023 - IN PROGRESS"
                     }
                 },
                 experience: {
                     title: "Experience",
                     data1: {
-                        formation: "formation",
-                        institute: "institute",
-                        period: "period"
-                    },
-                    data2: {
-                        formation: "formation",
-                        institute: "institute",
-                        period: "period"
-                    },
-                    data3: {
-                        formation: "formation",
-                        institute: "institute",
-                        period: "period"
-                    },
-                    data4: {
-                        formation: "formation",
-                        institute: "institute",
-                        period: "period"
-                    }
+                        formation: "JR. ATTENDANT",
+                        institute: "LIQ",
+                        period: "2017 – 2018"
+                      },
+                      data2: {
+                        formation: "TECH. IN TELECOMMUNICATION - ASSISTANT DESIGNER",
+                        institute: "ITS BRASIL",
+                        period: "2019 - 2021"
+                      },
+                      data3: {
+                        formation: "CUSTOMIZED SOLUTIONS CONSULTANT III",
+                        institute: "CAPGEMINI",
+                        period: "2021 - PRESENT"
+                      }
                 }
             },
             Portfolio: {

@@ -1,127 +1,121 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Pagination, Navigation } from 'swiper/modules';
+
+import { getData } from "./Data";
 
 const Tecnologia = () => {
     const { t, i18n } = useTranslation();
+    let array3 = [];
+    let aux = 0;
+    let listaBackend = getData().filter(({ tag }) => tag === "tec");
 
     return (
         <div className="skills__content">
             <h3 className="skills__title">{t('Skills.tecnologia')}</h3>
-
             <div className="skills__box">
-                <div className="skills__group">
-                    <div className="skills__data">
-                        <i class='bx bx-badge-check'></i>
+                <Swiper
+                    pagination={{
+                        type: 'fraction',
+                    }}
+                    navigation={true}
+                    modules={[Pagination, Navigation]}
+                    className="mySwiper"
+                >
+                    {listaBackend.map((element) => {
+                        if(aux === 6){
+                            array3 = [];
+                            aux = 0;
+                        }
 
-                        <div>
-                            <h3 className="skills__name">Jira</h3>
-                            <span className="skills__level">{t('Skills.intermediate')}</span>
-                        </div>
-                    </div>
+                        array3[aux] = element;
 
-                    <div className="skills__data">
-                        <i class='bx bx-badge-check'></i>
-
-                        <div>
-                            <h3 className="skills__name">Bitbucket</h3>
-                            <span className="skills__level">{t('Skills.professional')}</span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i class='bx bx-badge-check'></i>
-
-                        <div>
-                            <h3 className="skills__name">Confluence</h3>
-                            <span className="skills__level">{t('Skills.basic')}</span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i class='bx bx-badge-check'></i>
-
-                        <div>
-                            <h3 className="skills__name">VSCode</h3>
-                            <span className="skills__level">{t('Skills.intermediate')}</span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i class='bx bx-badge-check'></i>
-
-                        <div>
-                            <h3 className="skills__name">Eclipse</h3>
-                            <span className="skills__level">{t('Skills.intermediate')}</span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i class='bx bx-badge-check'></i>
-
-                        <div>
-                            <h3 className="skills__name">Maven</h3>
-                            <span className="skills__level">{t('Skills.intermediate')}</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="skills__group">
-                    <div className="skills__data">
-                        <i class='bx bx-badge-check'></i>
-
-                        <div>
-                            <h3 className="skills__name">Bamboo</h3>
-                            <span className="skills__level">{t('Skills.intermediate')}</span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i class='bx bx-badge-check'></i>
-
-                        <div>
-                            <h3 className="skills__name">Npm</h3>
-                            <span className="skills__level">{t('Skills.intermediate')}</span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i class='bx bx-badge-check'></i>
-
-                        <div>
-                            <h3 className="skills__name">Git/GitHub</h3>
-                            <span className="skills__level">{t('Skills.intermediate')}</span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i class='bx bx-badge-check'></i>
-
-                        <div>
-                            <h3 className="skills__name">DBeaver</h3>
-                            <span className="skills__level">{t('Skills.intermediate')}</span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i class='bx bx-badge-check'></i>
-
-                        <div>
-                            <h3 className="skills__name">Figma</h3>
-                            <span className="skills__level">{t('Skills.basic')}</span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i class='bx bx-badge-check'></i>
-
-                        <div>
-                            <h3 className="skills__name">Linux</h3>
-                            <span className="skills__level">{t('Skills.intermediate')}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        try {
+                            if (array3.length === 6 || array3[aux].id === listaBackend[listaBackend.length - 1].id) {
+                                return (
+                                    <SwiperSlide key={array3[0].id}>
+                                        <div className="skills__group">
+                                            {array3[0] !== undefined ? (
+                                                <div className="skills__data">
+                                                    <i className='bx bx-badge-check'></i>
+                                                    <div>
+                                                        <h3 className="skills__name">{array3[0].tec}</h3>
+                                                        <span className="skills__level">{array3[0].level}</span>
+                                                    </div>
+                                                </div>
+                                            ) : null}
+    
+                                            {array3[1] !== undefined ? (
+                                                <div className="skills__data">
+                                                    <i className='bx bx-badge-check'></i>
+                                                    <div>
+                                                        <h3 className="skills__name">{array3[1].tec}</h3>
+                                                        <span className="skills__level">{array3[1].level}</span>
+                                                    </div>
+                                                </div>
+                                            ) : null}
+    
+                                            {array3[2] !== undefined ? (
+                                                <div className="skills__data">
+                                                    <i className='bx bx-badge-check'></i>
+                                                    <div>
+                                                        <h3 className="skills__name">{array3[2].tec}</h3>
+                                                        <span className="skills__level">{array3[2].level}</span>
+                                                    </div>
+                                                </div>
+                                            ) : null}
+                                        </div>
+    
+    
+    
+                                        <div className="skills__group">
+                                            {array3[3] !== undefined ? (
+                                                <div className="skills__data">
+                                                    <i className='bx bx-badge-check'></i>
+                                                    <div>
+                                                        <h3 className="skills__name">{array3[3].tec}</h3>
+                                                        <span className="skills__level">{array3[3].level}</span>
+                                                    </div>
+                                                </div>
+                                            ) : null}
+    
+                                            {array3[4] !== undefined ? (
+                                                <div className="skills__data">
+                                                    <i className='bx bx-badge-check'></i>
+                                                    <div>
+                                                        <h3 className="skills__name">{array3[4].tec}</h3>
+                                                        <span className="skills__level">{array3[4].level}</span>
+                                                    </div>
+                                                </div>
+                                            ) : null}
+    
+                                            {array3[5] !== undefined ? (
+                                                <div className="skills__data">
+                                                    <i className='bx bx-badge-check'></i>
+                                                    <div>
+                                                        <h3 className="skills__name">{array3[5].tec}</h3>
+                                                        <span className="skills__level">{array3[5].level}</span>
+                                                    </div>
+                                                </div>
+                                            ) : null}
+                                        </div>
+    
+                                    </SwiperSlide>
+                                );
+    
+                            }
+                        } finally {
+                            aux++;
+                        }
+                        
+                    })}
+                </Swiper >
+            </div >
+        </div >
     )
 }
 
