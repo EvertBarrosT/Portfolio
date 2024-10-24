@@ -103,6 +103,71 @@ const Tecnologia = () => {
                                                 </div>
                                             ) : null}
                                         </div>
+
+                                        <div className="skills__group">
+                                            {array3[6] !== undefined ? (
+                                                <div className="skills__data">
+                                                    <i className='bx bx-badge-check'></i>
+                                                    <div>
+                                                        <h3 className="skills__name">{array3[6].tec}</h3>
+                                                        <span className="skills__level">{array3[6].level}</span>
+                                                    </div>
+                                                </div>
+                                            ) : null}
+
+                                            {array3[7] !== undefined ? (
+                                                <div className="skills__data">
+                                                    <i className='bx bx-badge-check'></i>
+                                                    <div>
+                                                        <h3 className="skills__name">{array3[7].tec}</h3>
+                                                        <span className="skills__level">{array3[7].level}</span>
+                                                    </div>
+                                                </div>
+                                            ) : null}
+
+                                            {array3[8] !== undefined ? (
+                                                <div className="skills__data">
+                                                    <i className='bx bx-badge-check'></i>
+                                                    <div>
+                                                        <h3 className="skills__name">{array3[8].tec}</h3>
+                                                        <span className="skills__level">{array3[8].level}</span>
+                                                    </div>
+                                                </div>
+                                            ) : null}
+                                        </div>
+
+                                        <div className="skills__group">
+                                            {array3[9] !== undefined ? (
+                                                <div className="skills__data">
+                                                    <i className='bx bx-badge-check'></i>
+                                                    <div>
+                                                        <h3 className="skills__name">{array3[9].tec}</h3>
+                                                        <span className="skills__level">{array3[9].level}</span>
+                                                    </div>
+                                                </div>
+                                            ) : null}
+
+                                            {array3[10] !== undefined ? (
+                                                <div className="skills__data">
+                                                    <i className='bx bx-badge-check'></i>
+                                                    <div>
+                                                        <h3 className="skills__name">{array3[10].tec}</h3>
+                                                        <span className="skills__level">{array3[10].level}</span>
+                                                    </div>
+                                                </div>
+                                            ) : null}
+
+                                            {array3[11] !== undefined ? (
+                                                <div className="skills__data">
+                                                    <i className='bx bx-badge-check'></i>
+                                                    <div>
+                                                        <h3 className="skills__name">{array3[11].tec}</h3>
+                                                        <span className="skills__level">{array3[11].level}</span>
+                                                    </div>
+                                                </div>
+                                            ) : null}
+
+                                        </div>
     
                                     </SwiperSlide>
                                 );
