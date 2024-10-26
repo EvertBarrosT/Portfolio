@@ -5,7 +5,7 @@ const messages = {
                 navHome: "Home",
                 navAbout: "About",
                 navSkills: "Skills",
-                navServices: "Services",
+                navQualification: "Qualification",
                 navPortfolio: "Portfolio",
                 navContact: "Contact"
             },
@@ -105,17 +105,17 @@ const messages = {
                     data1: {
                         formation: "JR. ATTENDANT",
                         institute: "LIQ",
-                        period: "2017 – 2018"
+                        period: " 2017 – 2018"
                       },
                       data2: {
                         formation: "TECH. IN TELECOMMUNICATION - ASSISTANT DESIGNER",
                         institute: "ITS BRASIL",
-                        period: "2019 - 2021"
+                        period: " 2019 - 2021"
                       },
                       data3: {
                         formation: "CUSTOMIZED SOLUTIONS CONSULTANT III",
                         institute: "CAPGEMINI",
-                        period: "2021 - PRESENT"
+                        period: " 2021 - PRESENT"
                       }
                 }
             },
@@ -139,7 +139,7 @@ const messages = {
                 writeMe: "Write me",
                 writeMeYourProject: "Leave Me A Message",
                 name: "Name",
-                mail: "Mail",
+                mail: "Sender",
                 message: "Message",
                 insertName: "Insert your name",
                 insertMail: "Insert your email",

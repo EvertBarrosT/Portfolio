@@ -5,7 +5,7 @@ const messages = {
                 navHome: "Início",
                 navAbout: "Sobre mim",
                 navSkills: "Habilidades",
-                navServices: "Serviços",
+                navQualification: "Qualificação",
                 navPortfolio: "Portfólio",
                 navContact: "Contato"
             },
