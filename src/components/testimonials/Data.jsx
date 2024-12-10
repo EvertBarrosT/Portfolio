@@ -1,27 +1,20 @@
-import Image1 from "../../assets/testimonial1.png";
-import Image2 from "../../assets/testimonial2.png";
+import Image1 from "../../assets/bruno.jpeg";
+import Image2 from "../../assets/mauricio.jpeg";
 import Image3 from "../../assets/testimonial3.png";
 
 export const Data = [
     {
       id: 1,
       image: Image1,
-      title: "Jhon Doe",
+      title: "Bruno Mello",
       description:
-        "A really good job, all aspects of the project were followed step by step and with good results.",
+        "O Evert possui fortes capacidades técnicas, bem como excelente visão estratégica e comercial. Além disso, possui as qualidades essenciais de qualquer organização, tais como a capacidade de aprender rapidamente quando necessário. Além disso, é capaz de resolver imprevistos e administrar conflitos implementando a melhor solução para qualquer questão técnica ou processual. Trabalhamos juntos por 2 anos e acredito que ele tem tudo para prosperar em sua carreira.",
     },
     {
       id: 2,
       image: Image2,
-      title: "Harry Clinton",
+      title: "Maurício Mendes",
       description:
-        "A really good job, all aspects of the project were followed step by step and with good results.",
-    },
-    {
-      id: 3,
-      image: Image3,
-      title: "Sara Cill",
-      description:
-        "A really good job, all aspects of the project were followed step by step and with good results.",
-    },
+        "Trabalhando com o Evert pude perceber que ele possui grandes capacidades técnicas e uma excelente visão sobre o negócio. Presenciei também suas qualidades enquanto pessoa, fundamentais em qualquer empresa que ele possa atuar. Nesses quase 3 anos de atuação juntos a squad que atuamos, destaco a sua capacidade técnica, no entendimento e resolução de demandas envolvendo java, testes automatizados, engenharia de software e regras de negócio.\n Afirmo com certeza que durante esse tempo de atuação, considero que o Evert tem ótimas capacidades para evoluir rapidamente na sua carreira, sendo um profissional de imenso valor para qualquer organização.",
+    }
   ];

@@ -3,27 +3,55 @@
 }
 
 .testimonial__card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px var(--shadow-color);
     background-color: var(--container-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 1.5rem 2rem;
+    border: 1px solid var(--shadow-color);
+    padding: 1.5rem;
     border-radius: 1.5rem;
     margin-bottom: var(--mb-3);
+    width: 100%;
+    max-width: 400px;
+    gap: 1rem;
 }
 
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+
 .testimonial__img {
-    width: 60px;
-    border-radius: 3rem;
-    margin-bottom: var(--mb-1);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .testimonial__name {
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-    margin-bottom: var(--mb-0-25);
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .testimonial__description {
-    font-size: var(--small-font-size);
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: left;
+    color: #555;
+    margin-top: 2.6rem;
+    max-height: 10rem;
+    overflow-y: auto;
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
 }
 
 /* Swiper Class */

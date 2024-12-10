@@ -1,6 +1,6 @@
 .footer {
     background-color: var(--container-color);
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid var(--shadow-color);
 }
 
 .footer__container {
@@ -44,7 +44,7 @@
 }
 
 .footer__social-link:hover {
-    background-color: var(--title-colo-dark);
+    background-color: var(--title-color-dark);
 }
 
 .footer__copy {
