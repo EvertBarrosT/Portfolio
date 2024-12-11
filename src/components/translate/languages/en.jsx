@@ -126,7 +126,8 @@ const messages = {
                 architecture: "Architecture",
                 apis: "APIs",
                 web: "Web",
-                demo: "Demo"
+                demo: "Demo",
+                repo: "Repository"
             },
             Testimonial: {
                 title: "What My Coworkers Say",

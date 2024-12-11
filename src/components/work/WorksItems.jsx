@@ -7,9 +7,15 @@ const WorksItems = ({item}) => {
     <div className="work__card" key={item.id}>
         <img src={item.image} alt="" className='work__img' />
         <h3 className="work__title">{item.title}</h3>
-        <a href="#" className="work__button">
-          {t('Portfolio.demo')} <i className="bx bx-right-arrow-alt work__button-icon"></i>
-        </a>
+        <div className="access__links">
+          <a href={item.demo} className="work__button">
+            {t('Portfolio.demo')} <i className="bx bx-play work__button-icon"></i>
+          </a>
+          <a href={item.github} className="work__button">
+            {t('Portfolio.repo')} <i className="bx bxl-github work__button-icon"></i>
+          </a>
+        </div>
+       
     </div>
   )
 }

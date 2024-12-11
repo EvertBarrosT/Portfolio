@@ -68,6 +68,11 @@
     color: var(--container-color);
 }
 
+.access__links{
+    display: flex;
+    gap: 1rem;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 1113px) {
