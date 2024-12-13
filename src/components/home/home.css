@@ -74,9 +74,18 @@
 }
 
 .img_pessoal{
-    background-image: url("src/assets/mainIconsdark.svg");
-    background-position: 25%;
-    background-size: 140%;
+    background-position: -25%;
+    background-size: 125%;
+}
+
+.img_Light{
+    background-image: url("src/assets/mainIconsLight.svg");
+    
+}
+
+.img_Dark{
+    background-image: url("src/assets/mainIconsDark.svg");
+    
 }
 
 .home__img {

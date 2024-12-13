@@ -35,7 +35,7 @@
 .testimonial__name {
     font-size: 1rem;
     font-weight: bold;
-    color: #333;
+    color: var(--title-color);
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -45,12 +45,12 @@
     font-size: 0.9rem;
     line-height: 1.4;
     text-align: left;
-    color: #555;
+    color: var(--title-color);
     margin-top: 2.6rem;
     max-height: 10rem;
     overflow-y: auto;
     padding: 0.5rem;
-    background-color: #f9f9f9;
+    background-color: var(--container-color);
     border-radius: 0.5rem;
 }
 

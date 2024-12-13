@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import './App.css';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
@@ -12,12 +12,19 @@ import ScrollUp from './components/scrollup/ScrollUp';
 import Work from './components/work/Work';
 
 const App = () => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    document.body.classList.toggle("dark-theme");
+  };
+
   return (
     <>
-    <Header/>
+    <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 
     <main className='main'>
-      <Home />
+    <Home darkMode={darkMode} />
       <About />
       <Skills />
       <Qualification/>

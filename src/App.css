@@ -16,6 +16,18 @@
   --container-color: #fff;
   --shadow-color: rgba(0, 0, 0, 0.1);
 
+  /* Dark Mode */
+  .dark-theme {
+    --hue: 120; /* Tons de verde */
+    --sat: 15%;
+    --title-color: hsl(var(--hue), var(--sat), 80%);
+    --title-color-dark: hsl(var(--hue), var(--sat), 60%);
+    --text-color: hsl(var(--hue), var(--sat), 60%);
+    --body-color: #121212; /* Cinza Neutro */
+    --container-color: #2F4F2F; /* Verde Musgo */
+    --shadow-color: rgba(47, 79, 47, 0.5);
+  }
+
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
 
@@ -40,7 +52,7 @@
   --mb-0-5: 0.5rem;
   --mb-0-75: 0.75rem;
   --mb-1: 1rem;
-  --mb-1-5: .5rem;
+  --mb-1-5: 0.5rem;
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;

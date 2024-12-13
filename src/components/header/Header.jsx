@@ -3,7 +3,7 @@ import "./header.css";
 
 import { useTranslation } from "react-i18next";
 
-const Header = () => {
+const Header = ({ darkMode, toggleDarkMode }) => {
     const {t, i18n} = useTranslation();
 
     /*=============== Change Website Language ===============*/
@@ -31,7 +31,7 @@ const Header = () => {
     const [Toggle, showMenu] = useState(false);
     const [activeNav, setActiveNav] = useState("#home");
     const [language, setLanguage] = useState("English (US)");
-
+    
     return (
         <header className="header">
             <nav className="nav container">
@@ -92,13 +92,13 @@ const Header = () => {
                         </li>
 
                         <li className="nav__item">
-                            <i className="uil uil-moon nav__button nav__button-darkmod"></i>
+                            <i className={`uil ${darkMode ? "uil-sun" : "uil-moon"} nav__button nav__button-darkmod`} onClick={toggleDarkMode}></i>
                         </li>
                     </ul>
                 </div>
 
                 <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
-                    <i class="uil uil-apps"></i>
+                <i class="uil uil-apps"></i>
                 </div>
             </nav>
         </header>
